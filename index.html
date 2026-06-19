@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">☁ WeatherNow</div>
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Search city...">
+        <button id="searchBtn">Search</button>
+    </div>
+</nav>
+
+<div id="loader" class="loader"></div>
+
+<div class="container">
+
+    <div id="currentWeather" class="weather-card"></div>
+
+    <div class="chart-section">
+        <h2>24-Hour Temperature</h2>
+        <canvas id="tempChart"></canvas>
+    </div>
+
+    <div class="forecast-section">
+        <h2>7-Day Forecast</h2>
+        <div id="forecastGrid" class="forecast-grid"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
